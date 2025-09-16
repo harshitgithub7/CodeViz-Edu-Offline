@@ -1,0 +1,455 @@
+Programming Fundamentals
+
+
+-----------------------------------------------------------------------------------------------------------------------------------
+Introduction to Programming
+Programming involves writing instructions for computers to execute tasks, combining logic and creativity to solve problems. It’s a critical skill for automating tasks, building applications, and understanding technology.
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Why Learn Programming?
+Develops problem-solving and logical thinking skills.
+Enables automation of repetitive tasks.
+Powers software development for apps, websites, and more.
+Opens career opportunities in technology.
+Enhances understanding of how digital systems work.
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Foundations of Coding
+Variables and Data Types
+Variables store data values, each associated with a type that defines the kind of data and permissible operations.
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Common Data Types:
+
+Integers: Whole numbers (e.g., 5, -3).
+Floats: Decimal numbers (e.g., 3.14).
+Characters: Single symbols (e.g., 'a', '!').
+Strings: Sequences of characters (e.g., "hello").
+Booleans: True or false values.
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Typing:
+
+Statically typed languages (e.g., C, Java) require type declaration.
+Dynamically typed languages (e.g., Python) infer types at runtime.
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Example in C:
+int age = 25;
+float height = 5.9;
+char initial = 'J';
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Example in Python:
+age = 25
+height = 5.9
+initial = 'J'
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Basic Syntax
+Syntax defines the rules for writing code in a programming language.
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Entry Point: Most programs start from a main function or equivalent.
+C: int main() { /* code */ return 0; }
+Python: Execution starts from the top of the file.
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Code Blocks: Grouped using curly braces {} in C-like languages or indentation in Python.
+Statements: Instructions ending with a semicolon ; in C or newline in Python.
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Input/Output
+
+Output: Displays data to the user.
+C: printf("Hello, world!\n");
+Python: print("Hello, world!")
+Java: System.out.println("Hello, world!");
+
+
+Input: Reads data from the user.
+C: scanf("%d", &age);
+Python: age = int(input("Enter your age: "))
+Java: Scanner scanner = new Scanner(System.in); int age = scanner.nextInt();
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Operators
+Operators perform operations on variables and values.
+
+
+Arithmetic: +, -, *, /, % (modulus).
+Relational: ==, !=, <, >, <=, >=.
+Logical: && (and), || (or), ! (not).
+Assignment: =, +=, -=, etc.
+Bitwise: &, |, ^, ~, <<, >>.
+Ternary: condition ? expr1 : expr2 (e.g., x = (a > b) ? a : b;).
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Conditionals
+Conditionals control program flow based on conditions.
+
+
+If Statement: Executes code if a condition is true.
+C: if (age > 18) { printf("Adult\n"); }
+Python: if age > 18: print("Adult")
+
+
+Else Statement: Executes code if the condition is false.
+Else If: Checks additional conditions (Python uses elif).
+Switch Statement: Selects code blocks based on a variable’s value (common in C, Java).
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Loops
+Loops repeat code execution.
+
+
+
+For Loop: Repeats a known number of times.
+C: for (int i = 0; i < 10; i++) { /* code */ }
+Python: for i in range(10): # code
+
+
+While Loop: Repeats while a condition is true.
+C: while (condition) { /* code */ }
+Python: while condition: # code
+
+
+
+Do-While Loop: Executes at least once, then repeats if condition is true (C, Java).
+C: do { /* code */ } while (condition);
+
+
+Control Statements: break exits a loop; continue skips to the next iteration.
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Data Structures
+Strings
+Strings are sequences of characters, often used for text.
+
+
+
+C: Null-terminated character arrays (\0).
+Python: Immutable sequences.
+Operations: Concatenation, substring, length (e.g., strlen in C, len() in Python).
+
+
+Example:
+
+C: char str[] = "hello"; printf("%s", str);
+Python: str = "hello"; print(str)
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Arrays
+Arrays store elements of the same type in contiguous memory.
+
+
+
+C: Fixed-size arrays.
+Python: Lists (dynamic arrays).
+Access: Via indices (e.g., arr[0]).
+
+
+
+Example:
+
+C: int arr[5] = {1, 2, 3, 4, 5};
+Python: arr = [1, 2, 3, 4, 5]
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Tuples
+Tuples are ordered, immutable collections.
+
+
+
+Python: Built-in tuple type.
+C: Simulated using structs.
+Example:
+Python: tup = (1, "hello", 3.14)
+C: struct Tuple { int a; char* b; float c; };
+
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Dictionaries
+Dictionaries store key-value pairs.
+
+
+
+Python: Built-in dict.
+C++: std::map or std::unordered_map.
+Java: HashMap.
+Example:
+Python: d = {"name": "Alice", "age": 25}
+Java: HashMap<String, Object> d = new HashMap<>(); d.put("name", "Alice");
+
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Sets
+Sets store unique elements.
+
+Python: Built-in set.
+C++: std::set or std::unordered_set.
+Example:
+Python: s = {1, 2, 3}
+C++: std::set<int> s = {1, 2, 3};
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Linked Lists
+Linked lists are sequences of nodes, each containing data and a pointer to the next node.
+
+Types: Singly, doubly, circular.
+Advantages: Dynamic size, efficient insertions/deletions.
+
+Example in C:
+struct Node {
+    int data;
+    struct Node* next;
+};
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Stacks
+Stacks follow Last-In-First-Out (LIFO).
+
+
+Operations: Push, pop, peek.
+Implementation: Arrays or linked lists.
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Queues
+Queues follow First-In-First-Out (FIFO).
+
+
+Operations: Enqueue, dequeue, front.
+Variants: Circular queue, priority queue.
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Trees
+Trees are hierarchical structures with a root and child nodes.
+
+
+Types: Binary tree, binary search tree (BST), heap.
+Uses: Searching, sorting, hierarchical data.
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Graphs
+Graphs consist of nodes (vertices) connected by edges.
+
+
+Types: Directed/undirected, weighted/unweighted.
+Uses: Networks, pathfinding.
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Functions and Recursion:
+
+Functions
+Functions are reusable code blocks performing specific tasks.
+Components: Return type, name, parameters.
+Example:
+C: int add(int a, int b) { return a + b; }
+Python: def add(a, b): return a + b
+Java: public int add(int a, int b) { return a + b; }
+
+***********************************************************************************************************************************
+Recursion
+Recursion involves a function calling itself to solve smaller instances.
+
+Base Case: Stops recursion.
+Recursive Case: Calls the function with a smaller input.
+Example (Factorial):
+C: int factorial(int n) { if (n <= 1) return 1; return n * factorial(n-1); }
+Python: def factorial(n): return 1 if n <= 1 else n * factorial(n-1)
+
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Logic and Algorithms
+
+Searching Algorithms:
+
+Linear Search: Checks each element sequentially. Time: O(n).
+Binary Search: Divides sorted array in half. Time: O(log n).
+
+"""Sorting Algorithms
+   Algorithm
+   Time Complexity"""
+
+Description:
+
+Bubble Sort
+O(n²)
+Swaps adjacent elements if out of order.
+
+***********************************************************************************************************************************
+
+Selection Sort
+O(n²)
+Selects smallest element each iteration.
+
+***********************************************************************************************************************************
+
+Insertion Sort
+O(n²)
+Builds sorted array one item at a time.
+
+***********************************************************************************************************************************
+
+Merge Sort
+O(n log n)
+Divides and merges sorted subarrays.
+
+***********************************************************************************************************************************
+
+Quick Sort
+O(n log n) avg
+Partitions around a pivot.
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Dynamic Programming
+Stores subproblem results to avoid redundant computation.
+
+Examples: Fibonacci sequence, knapsack problem.
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Bit Manipulation
+Operates on binary representations.
+
+
+Operations: AND (&), OR (|), XOR (^), shifts (<<, >>).
+Use Case: Check if a number is even (num & 1 == 0).
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+System-Level Programming
+Memory Management
+
+Manual: In C, use malloc, calloc, free to manage memory.
+Automatic: In Python, Java, garbage collection handles memory.
+Best Practice: Avoid memory leaks by freeing allocated memory in C.
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Object-Oriented Programming (OOP)
+OOP organizes code using objects and classes.
+
+Encapsulation: Bundles data and methods.
+Inheritance: Derives new classes from existing ones.
+Polymorphism: Uses a single interface for different types.
+Abstraction: Hides implementation details.
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Exception Handling
+Handles runtime errors gracefully.
+
+C: Uses error codes.
+C++: try-catch blocks.
+Python: try-except blocks.
+
+Example:
+
+Python: try: x = 1/0 except ZeroDivisionError: print("Cannot divide by zero")
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+File Handling
+Reads/writes data to files.
+
+C: fopen, fprintf, fscanf, fclose with modes (r, w, a).
+Python: open() with modes (r, w, a).
+
+
+Example:
+
+C: FILE* fp = fopen("file.txt", "w"); fprintf(fp, "Hello"); fclose(fp);
+Python: with open("file.txt", "w") as f: f.write("Hello")
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Additional Topics
+Algorithmic Thinking
+The process of solving problems by defining clear, sequential steps.
+
+***********************************************************************************************************************************
+
+Approach: Understand the problem, identify inputs/outputs, design steps.
+Example: Following a recipe or assembling furniture.
+
+***********************************************************************************************************************************
+
+Testing and Debugging
+
+Testing: Verifies code correctness.
+Unit tests: Test individual functions.
+Integration tests: Test combined components.
+
+***********************************************************************************************************************************
+
+Debugging: Identifies and fixes errors.
+Tools: Debuggers, print statements, logging.
+
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+
+Version Control
+Manages code changes over time.
+
+***********************************************************************************************************************************
+
+Tool: Git is widely used.
+Example: git commit -m "Add feature" to save changes.
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Concurrency
+Executes multiple tasks simultaneously.
+
+***********************************************************************************************************************************
+
+Concepts: Threads, processes, asynchronous programming.
+Example: Python’s threading module, Java’s ExecutorService.
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Design Patterns
+Reusable solutions to common problems.
+
+***********************************************************************************************************************************
+
+Examples: Singleton (single instance), Factory (object creation), Observer (event handling).
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+APIs and Libraries
+Extend functionality using external code.
+
+***********************************************************************************************************************************
+
+APIs: Interfaces for interacting with services (e.g., REST APIs).
+Libraries: Pre-written code (e.g., Python’s math, C++’s STL).
+

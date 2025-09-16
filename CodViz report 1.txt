@@ -1,0 +1,36 @@
+•	[Start]
+Kick-off the CodeViz project with an initial planning and aligning vision and goals.
+
+•	[Project Initialization]
+Ideated the purpose and scope of the platform. Finalized the tech stack including Python, CustomTkinter for GUI, Pygments for syntax highlighting, and JSON for content storage. Created file structure and project skeleton.
+
+•	[Design Modular GUI Architecture]
+Designed a clean and user-friendly GUI with modular navigation. Achieved seamless integration of a sidebar, multipage support, and theme compatibility (light/dark modes).
+
+•	[Develop Learning Module]
+Developed a module that loads syntax-highlighted C code examples using Pygments. Added keyword tooltips and interactive UI. Achieved dynamic example switching and content updates from JSON files.
+
+•	[Build Concepts Module]
+Created a scrollable, searchable theory browser for C programming topics. Achieved a clean, categorized structure with content expansion.
+
+•	[Develop Applications Module]
+Built interactive cards to show real-world applications of C concepts. Hover and click features implemented to improve usability.
+
+•	[Build and Added Offline Compiler]
+Integrated an offline code editor with line numbering and syntax highlighting. Embedded C compiler using wrapper execution. Enabled users to write and execute code without internet.
+
+•	[User Personalization Features]
+Added profile page with user name, tagline, and profile picture. Enabled persistent dark/light themes and customized learning experience.
+
+•	[Implement Settings & User Manual]
+Created a collapsible help section with dropdowns for guidance. Added settings menu for customization options.
+
+•	[Testing & Debugging]
+Tested all components for UI consistency, responsiveness, and bug fixing. Resolved issues with tooltip overlap, syntax rendering, and lazy loading.
+
+•	[Final Integration & Polish]
+Finalized module connections. Ensured smooth transitions and polished UI/UX. Removed the Visualizer module as per updated scope.
+
+•	[End]
+Delivered a fully functional, modular offline coding platform for C learners without the Visualizer feature.
+

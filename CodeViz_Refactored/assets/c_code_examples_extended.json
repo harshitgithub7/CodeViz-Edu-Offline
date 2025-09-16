@@ -1,0 +1,102 @@
+[
+  {
+    "title": "Pyramid Star Pattern - 5 Rows",
+    "output_image": "assets/outputs/star_pattern.png",
+    "code": "#include <stdio.h>\nint main() {\n    int n = 5, i, j, space;\n    for(i = 0; i < n; i++) {\n        for(space = 0; space < n - i - 1; space++) {\n            printf(\"  \");\n        }\n        for(j = 0; j < 2 * i + 1; j++) {\n            printf(\"* \");\n        }\n        printf(\"\\n\");\n    }\n    return 0;\n}"
+  },
+  {
+    "title": "Right-Angle Star Pattern - 5 Rows",
+    "output_image": "assets/outputs/right_angle_star_pattern___7_rows.png",
+    "code": "#include <stdio.h>\nint main() {\n    int n = 5, i, j;\n    for(i = 0; i < n; i++) {\n        for(j = 0; j <= i; j++) {\n            printf(\"* \");\n        }\n        printf(\"\\n\");\n    }\n    return 0;\n}"
+  },
+  {
+    "title": "Palindrome Number - 373",
+    "output_image": "assets/outputs/palindrome_number___373.png",
+    "code": "#include <stdio.h>\nint main() {\n    int num = 373, rev = 0, rem, original = num;\n    while(num > 0) {\n        rem = num % 10;\n        rev = rev * 10 + rem;\n        num /= 10;\n    }\n    if(original == rev)\n        printf(\"%d is a palindrome.\\n\", original);\n    else\n        printf(\"%d is not a palindrome.\\n\", original);\n    return 0;\n}"
+  },
+  {
+    "title": "Palindrome Number - 785",
+    "output_image": "assets/outputs/palindrome_number.png",
+    "code": "#include <stdio.h>\nint main() {\n    int num = 785, rev = 0, rem, original = num;\n    while(num > 0) {\n        rem = num % 10;\n        rev = rev * 10 + rem;\n        num /= 10;\n    }\n    if(original == rev)\n        printf(\"%d is a palindrome.\\n\", original);\n    else\n        printf(\"%d is not a palindrome.\\n\", original);\n    return 0;\n}"
+  },
+  {
+    "title": "Armstrong Number - 153",
+    "output_image": "assets/outputs/armstrong_number.png",
+    "code": "#include <stdio.h>\n#include <math.h>\nint main() {\n    int num = 153, sum = 0, temp = num, digits = 0;\n    while(temp > 0) {\n        digits++;\n        temp /= 10;\n    }\n    temp = num;\n    while(temp > 0) {\n        sum += pow(temp % 10, digits);\n        temp /= 10;\n    }\n    if(sum == num)\n        printf(\"%d is an Armstrong number.\\n\", num);\n    else\n        printf(\"%d is not an Armstrong number.\\n\", num);\n    return 0;\n}"
+  },
+  {
+    "title": "Armstrong Number - 407",
+    "output_image": "assets/outputs/armstrong_number___407.png",
+    "code": "#include <stdio.h>\n#include <math.h>\nint main() {\n    int num = 407, sum = 0, temp = num, digits = 0;\n    while(temp > 0) {\n        digits++;\n        temp /= 10;\n    }\n    temp = num;\n    while(temp > 0) {\n        sum += pow(temp % 10, digits);\n        temp /= 10;\n    }\n    if(sum == num)\n        printf(\"%d is an Armstrong number.\\n\", num);\n    else\n        printf(\"%d is not an Armstrong number.\\n\", num);\n    return 0;\n}"
+  },
+  {
+    "title": "Prime Number - 229",
+    "output_image": "assets/outputs/prime_number___229.png",
+    "code": "#include <stdio.h>\nint main() {\n    int num = 229, i, isPrime = 1;\n    if(num <= 1) isPrime = 0;\n    for(i = 2; i <= num / 2; i++) {\n        if(num % i == 0) {\n            isPrime = 0;\n            break;\n        }\n    }\n    if(isPrime)\n        printf(\"%d is a prime number.\\n\", num);\n    else\n        printf(\"%d is not a prime number.\\n\", num);\n    return 0;\n}"
+  },
+  {
+    "title": "Prime Number - 116",
+    "output_image": "assets/outputs/prime_number.png",
+    "code": "#include <stdio.h>\nint main() {\n    int num = 116, i, isPrime = 1;\n    if(num <= 1) isPrime = 0;\n    for(i = 2; i <= num / 2; i++) {\n        if(num % i == 0) {\n            isPrime = 0;\n            break;\n        }\n    }\n    if(isPrime)\n        printf(\"%d is a prime number.\\n\", num);\n    else\n        printf(\"%d is not a prime number.\\n\", num);\n    return 0;\n}"
+  },
+  {
+    "title": "Reverse String - programming",
+    "output_image": "assets/outputs/reverse_string___programming.png",
+    "code": "#include <stdio.h>\n#include <string.h>\nint main() {\n    char str[] = \"programming\", temp;\n    int i, j, len = strlen(str);\n    for(i = 0, j = len - 1; i < j; i++, j--) {\n        temp = str[i];\n        str[i] = str[j];\n        str[j] = temp;\n    }\n    printf(\"Reversed string: %s\\n\", str);\n    return 0;\n}"
+  },
+  {
+    "title": "Reverse String - hello",
+    "output_image": "assets/outputs/reverse_string___hello.png",
+    "code": "#include <stdio.h>\n#include <string.h>\nint main() {\n    char str[] = \"hello\", temp;\n    int i, j, len = strlen(str);\n    for(i = 0, j = len - 1; i < j; i++, j--) {\n        temp = str[i];\n        str[i] = str[j];\n        str[j] = temp;\n    }\n    printf(\"Reversed string: %s\\n\", str);\n    return 0;\n}"
+  },
+  {
+    "title": "Palindrome String - level",
+    "output_image": "assets/outputs/palindrome_string___level.png",
+    "code": "#include <stdio.h>\n#include <string.h>\nint main() {\n    char str[] = \"level\";\n    int i, j, len = strlen(str), isPalindrome = 1;\n    for(i = 0, j = len - 1; i < j; i++, j--) {\n        if(str[i] != str[j]) {\n            isPalindrome = 0;\n            break;\n        }\n    }\n    if(isPalindrome)\n        printf(\"%s is a palindrome.\\n\", str);\n    else\n        printf(\"%s is not a palindrome.\\n\", str);\n    return 0;\n}"
+  },
+  {
+    "title": "Palindrome String - world",
+    "output_image": "assets/outputs/palindrome_string___world.png",
+    "code": "#include <stdio.h>\n#include <string.h>\nint main() {\n    char str[] = \"world\";\n    int i, j, len = strlen(str), isPalindrome = 1;\n    for(i = 0, j = len - 1; i < j; i++, j--) {\n        if(str[i] != str[j]) {\n            isPalindrome = 0;\n            break;\n        }\n    }\n    if(isPalindrome)\n        printf(\"%s is a palindrome.\\n\", str);\n    else\n        printf(\"%s is not a palindrome.\\n\", str);\n    return 0;\n}"
+  },
+  {
+    "title": "Count Vowels - programming",
+    "output_image": "assets/outputs/count_vowels___programming.png",
+    "code": "#include <stdio.h>\n#include <string.h>\nint main() {\n    char str[] = \"programming\";\n    int i, vowels = 0;\n    for(i = 0; str[i] != '\\0'; i++) {\n        if(str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u' ||\n           str[i] == 'A' || str[i] == 'E' || str[i] == 'I' || str[i] == 'O' || str[i] == 'U')\n            vowels++;\n    }\n    printf(\"Number of vowels: %d\\n\", vowels);\n    return 0;\n}"
+  },
+  {
+    "title": "Count Vowels - hello",
+    "output_image": "assets/outputs/count_vowels___hello.png",
+    "code": "#include <stdio.h>\n#include <string.h>\nint main() {\n    char str[] = \"hello\";\n    int i, vowels = 0;\n    for(i = 0; str[i] != '\\0'; i++) {\n        if(str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u' ||\n           str[i] == 'A' || str[i] == 'E' || str[i] == 'I' || str[i] == 'O' || str[i] == 'U')\n            vowels++;\n    }\n    printf(\"Number of vowels: %d\\n\", vowels);\n    return 0;\n}"
+  },
+  {
+    "title": "Linear Search - Key 23",
+    "output_image": "assets/outputs/linear_search___key_23.png",
+    "code": "#include <stdio.h>\nint main() {\n    int arr[] = {50, 89, 23, 76, 72, 9, 34};\n    int n = 7, key = 23, i;\n    for(i = 0; i < n; i++) {\n        if(arr[i] == key) {\n            printf(\"Element %d found at index %d\\n\", key, i);\n            return 0;\n        }\n    }\n    printf(\"Element %d not found\\n\", key);\n    return 0;\n}"
+  },
+  {
+    "title": "Linear Search - Key 99",
+    "output_image": "assets/outputs/linear_search___key_99.png",
+    "code": "#include <stdio.h>\nint main() {\n    int arr[] = {32, 9, 20, 80, 89, 99, 84, 43, 65, 24};\n    int n = 10, key = 99, i;\n    for(i = 0; i < n; i++) {\n        if(arr[i] == key) {\n            printf(\"Element %d found at index %d\\n\", key, i);\n            return 0;\n        }\n    }\n    printf(\"Element %d not found\\n\", key);\n    return 0;\n}"
+  },
+  {
+    "title": "Factorial - 6",
+    "output_image": "assets/outputs/factorial___6.png",
+    "code": "#include <stdio.h>\nint main() {\n    int n = 6, fact = 1, i;\n    for(i = 1; i <= n; i++) {\n        fact *= i;\n    }\n    printf(\"Factorial of %d is %d\\n\", n, fact);\n    return 0;\n}"
+  },
+  {
+    "title": "Factorial - 10",
+    "output_image": "assets/outputs/factorial___10.png",
+    "code": "#include <stdio.h>\nint main() {\n    int n = 10, fact = 1, i;\n    for(i = 1; i <= n; i++) {\n        fact *= i;\n    }\n    printf(\"Factorial of %d is %d\\n\", n, fact);\n    return 0;\n}"
+  },
+  {
+    "title": "Multiplication Table - 5",
+    "output_image": "assets/outputs/multiplication_table___5.png",
+    "code": "#include <stdio.h>\nint main() {\n    int num = 5, i;\n    for(i = 1; i <= 10; i++) {\n        printf(\"%d x %d = %d\\n\", num, i, num * i);\n    }\n    return 0;\n}"
+  },
+  {
+    "title": "Multiplication Table - 8",
+    "output_image": "assets/outputs/multiplication_table___8.png",
+    "code": "#include <stdio.h>\nint main() {\n    int num = 8, i;\n    for(i = 1; i <= 10; i++) {\n        printf(\"%d x %d = %d\\n\", num, i, num * i);\n    }\n    return 0;\n}"
+  }
+]
